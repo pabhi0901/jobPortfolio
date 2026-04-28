@@ -215,15 +215,24 @@ body {
   .topnav-inner {
     padding: 0 .75rem;
     gap: .5rem;
+    justify-content: space-between;
   }
 
-  .mobile-two-pills {
-    flex: 1;
-    justify-content: center;
-    background: transparent;
-    border: none;
-    padding: 0;
-    gap: .25rem;
+  .topnav-logo,
+  .topnav-controls {
+    flex: 0 0 auto;
+  }
+
+  .topnav-controls {
+    gap: .35rem;
+  }
+
+  .nav-mischief-btn {
+    display: none;
+  }
+
+  .hamburger-btn {
+    display: flex !important;
   }
 }
 
@@ -348,7 +357,7 @@ body {
 }
 
 .hamburger-btn {
-  display: none;
+  display: none !important;
 }
 
 /* Icon button (reused) */
@@ -2319,11 +2328,6 @@ body.portfolio-inverted #bgCanvas {
     display: none;
   }
 
-  /* Top nav hamburger — hidden on mobile (replaced by two-pill nav) */
-  .hamburger-btn {
-    display: none;
-  }
-
   /* Desktop pills hidden on mobile */
   .topnav-pills {
     display: none;
@@ -2332,11 +2336,6 @@ body.portfolio-inverted #bgCanvas {
   /* Logo name hidden on mobile; show only avatar */
   .logo-name {
     display: none;
-  }
-
-  /* Two-pill mobile nav — visible only on mobile */
-  .mobile-two-pills {
-    display: flex;
   }
 
   .topnav {
@@ -2464,43 +2463,15 @@ body.portfolio-inverted #bgCanvas {
 
 /* Shown on mobile — this rule MUST come after the display:none above */
 @media (max-width:768px) {
-  .mobile-two-pills {
-    display: flex !important;
-    flex: 1;
-    justify-content: center;
-    background: var(--glass);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 3px;
-    gap: 4px;
+  .mobile-nav {
+    margin: 0 .75rem .75rem;
+    background: var(--card-bg);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border-top: 1px solid var(--border);
+    border-radius: 0 0 14px 14px;
+    box-shadow: var(--shadow-sm);
   }
-}
-
-.m2-pill {
-  background: transparent;
-  border: none;
-  color: var(--text-2);
-  font-size: .76rem;
-  font-weight: 600;
-  padding: .3rem .65rem;
-  border-radius: 9px;
-  transition: background var(--tr), color var(--tr), transform var(--tr-b);
-  white-space: nowrap;
-}
-
-.m2-pill:hover {
-  color: var(--text-1);
-  background: var(--glass-h);
-}
-
-.m2-pill.active {
-  background: var(--grad);
-  color: #fff;
-  transform: none;
-}
-
-[data-theme="dark"] .m2-pill.active {
-  color: #070b0f;
 }
 
 /* ════════════════════════════════════════════════
