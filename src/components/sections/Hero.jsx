@@ -77,7 +77,7 @@ const Hero = () => {
           <h2 className="hero-title">I turn ideas into <br /> <span className="gradient-text">full-stack products </span> powered by <span className="gradient-text"> real intelligence</span></h2>
           <p className="hero-sub">Backend Developer · Software Architect · AI Integrator · Problem Solver</p>
           <div className="hero-cta">
-            <a href="https://ik.imagekit.io/g6obyrspb/Abhishek_Pandey_Resume.pdf" target="_blank" rel="noopener noreferrer" className="btn-primary">
+            <a href="https://ik.imagekit.io/g6obyrspb/resume_updated.pdf" target="_blank" rel="noopener noreferrer" className="btn-primary">
               Download Resume <FaDownload />
             </a>
             <button className="btn-outline" onClick={() => document.getElementById('contact').scrollIntoView({behavior: 'smooth'})}>

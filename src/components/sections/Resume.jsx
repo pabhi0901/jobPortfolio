@@ -80,7 +80,7 @@ const Resume = () => {
           <h2 className="resume-main-title">The <span className="gradient-text">Arsenal</span> & The <span className="gradient-text">Journey</span></h2>
           <p className="resume-subtitle">Technologies I command and the path that shaped me.</p>
         </div>
-        <a href="https://ik.imagekit.io/g6obyrspb/Abhishek_Pandey_Resume.pdf" target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ alignSelf: 'center' }}>
+        <a href="https://ik.imagekit.io/g6obyrspb/resume_updated.pdf" target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ alignSelf: 'center' }}>
           Download PDF <FaDownload />
         </a>
       </div>
