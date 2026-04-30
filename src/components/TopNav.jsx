@@ -56,7 +56,7 @@ const TopNav = () => {
             type="button"
             onClick={handleMobileClickMe}
           >
-            Click Me
+            Mirror It
           </button>
           <button
             className="icon-btn hamburger-btn"
