@@ -25,7 +25,7 @@ const Chatbot = () => {
   const [messages, setMessages] = useState([
     {
       role: 'assistant',
-      text: "Hi there! 👋 I'm Abhishek's virtual assistant.\n\nFeel free to ask me anything about his background, experience, projects, or how to get in touch!"
+      text: "Hi there! 👋 I'm Abhishek's AI Buddy.\n\nFeel free to ask me anything about his background, experience, projects, or how to get in touch!"
     }
   ]);
   const [input, setInput] = useState('');
@@ -162,7 +162,7 @@ const Chatbot = () => {
         <button
           className="chatbot-trigger-btn"
           onClick={() => { setIsOpen(true); setIsMinimized(false); }}
-          title="Chat with Abhishek's Assistant"
+          title="Chat with Abhishek's AI Buddy"
           aria-label="Open Chat"
         >
           <div className="trigger-pulse"></div>
@@ -175,7 +175,7 @@ const Chatbot = () => {
             <span className="trigger-online-dot"></span>
           </div>
           <div className="trigger-text-group">
-            <span className="trigger-title">Chat with me</span>
+            <span className="trigger-title">Chat with my AI Buddy</span>
             <span className="trigger-status">Online • Replies instantly</span>
           </div>
           <div className="trigger-chat-icon">
@@ -199,7 +199,7 @@ const Chatbot = () => {
                 <span className="avatar-online-dot"></span>
               </div>
               <div className="header-text">
-                <div className="bot-title">Abhishek's Assistant</div>
+                <div className="bot-title">Abhishek's AI Buddy</div>
                 <div className="bot-subtitle">
                   <span className="status-indicator-dot"></span> Online • Ready to help
                 </div>
