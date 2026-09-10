@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import TopNav from '../components/TopNav';
 import Sidebar from '../components/Sidebar';
 import Hero from '../components/sections/Hero';
+import Chatbot from '../components/Chatbot';
 
 const Home = () => {
   useEffect(() => {
@@ -69,6 +70,7 @@ const Home = () => {
           <Hero />
         </main>
       </div>
+      <Chatbot />
     </>
   );
 };
